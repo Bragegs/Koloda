@@ -246,7 +246,7 @@ public class DraggableCardView: UIView, UIGestureRecognizerDelegate {
             
         case .ended:
             swipeMadeAction()
-            
+            delegate?.card(self, wasDraggedWithFinishPercentage: -123, inDirection: .left)
             layer.shouldRasterize = false
             
         default:
