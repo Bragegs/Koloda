@@ -264,6 +264,10 @@ open class KolodaView: UIView, DraggableCardDelegate {
     // MARK: DraggableCardDelegate
     
     func card(_ card: DraggableCardView, wasDraggedWithFinishPercentage percentage: CGFloat, inDirection direction: SwipeResultDirection) {
+        if percentage == -123 {
+            delegate?.koloda(self, draggedCardWithPercentage: percentage, in: .right)
+            return
+        }
         animating = true
         
         if let shouldMove = delegate?.kolodaShouldMoveBackgroundCard(self), shouldMove {
