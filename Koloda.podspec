@@ -6,7 +6,7 @@ s.summary          = "KolodaView is a class designed to simplify the implementat
 s.homepage         = "https://github.com/Yalantis/Koloda"
 s.license          = 'MIT'
 s.author           = "Yalantis"
-s.source           = { :git => "https://github.com/Yalantis/Koloda.git", :tag => s.version }
+s.source           = { :git => "https://github.com/Bragegs/Koloda.git" }
 s.social_media_url = 'https://twitter.com/yalantis'
 
 s.platform     = :ios, '8.0'
